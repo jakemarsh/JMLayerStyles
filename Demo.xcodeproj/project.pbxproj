@@ -13,6 +13,12 @@
 		3050EE5F14D1950200788112 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3050EE5D14D1950200788112 /* InfoPlist.strings */; };
 		3050EE6114D1950300788112 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3050EE6014D1950300788112 /* main.m */; };
 		3050EE6514D1950300788112 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3050EE6414D1950300788112 /* AppDelegate.m */; };
+		3050EE9414D198F000788112 /* JMStylableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3050EE8814D198F000788112 /* JMStylableView.m */; };
+		3050EE9514D198F000788112 /* JMViewLayerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3050EE8A14D198F000788112 /* JMViewLayerStyle.m */; };
+		3050EE9614D198F000788112 /* DropShadowLayerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3050EE8D14D198F000788112 /* DropShadowLayerStyle.m */; };
+		3050EE9714D198F000788112 /* GradientOverlayLayerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3050EE8F14D198F000788112 /* GradientOverlayLayerStyle.m */; };
+		3050EE9814D198F000788112 /* InnerShadowLayerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3050EE9114D198F000788112 /* InnerShadowLayerStyle.m */; };
+		3050EE9914D198F000788112 /* StrokeLayerStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3050EE9314D198F000788112 /* StrokeLayerStyle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +26,25 @@
 		3050EE5414D1950200788112 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3050EE5614D1950200788112 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3050EE5814D1950200788112 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3050EE5C14D1950200788112 /* Demo-Info.plist */ = {isa = PBXFileReference; path = "Demo-Info.plist"; sourceTree = "<group>"; };
+		3050EE5C14D1950200788112 /* Demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Demo-Info.plist"; sourceTree = "<group>"; };
 		3050EE5E14D1950200788112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3050EE6014D1950300788112 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3050EE6214D1950300788112 /* Demo-Prefix.pch */ = {isa = PBXFileReference; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
-		3050EE6314D1950300788112 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		3050EE6214D1950300788112 /* Demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
+		3050EE6314D1950300788112 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3050EE6414D1950300788112 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3050EE8614D198F000788112 /* JMLayerStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMLayerStyles.h; sourceTree = "<group>"; };
+		3050EE8714D198F000788112 /* JMStylableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMStylableView.h; sourceTree = "<group>"; };
+		3050EE8814D198F000788112 /* JMStylableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMStylableView.m; sourceTree = "<group>"; };
+		3050EE8914D198F000788112 /* JMViewLayerStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMViewLayerStyle.h; sourceTree = "<group>"; };
+		3050EE8A14D198F000788112 /* JMViewLayerStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMViewLayerStyle.m; sourceTree = "<group>"; };
+		3050EE8C14D198F000788112 /* DropShadowLayerStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropShadowLayerStyle.h; sourceTree = "<group>"; };
+		3050EE8D14D198F000788112 /* DropShadowLayerStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropShadowLayerStyle.m; sourceTree = "<group>"; };
+		3050EE8E14D198F000788112 /* GradientOverlayLayerStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientOverlayLayerStyle.h; sourceTree = "<group>"; };
+		3050EE8F14D198F000788112 /* GradientOverlayLayerStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientOverlayLayerStyle.m; sourceTree = "<group>"; };
+		3050EE9014D198F000788112 /* InnerShadowLayerStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InnerShadowLayerStyle.h; sourceTree = "<group>"; };
+		3050EE9114D198F000788112 /* InnerShadowLayerStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InnerShadowLayerStyle.m; sourceTree = "<group>"; };
+		3050EE9214D198F000788112 /* StrokeLayerStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrokeLayerStyle.h; sourceTree = "<group>"; };
+		3050EE9314D198F000788112 /* StrokeLayerStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrokeLayerStyle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +91,7 @@
 		3050EE5A14D1950200788112 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				3050EE8514D198F000788112 /* JMLayerStyles */,
 				3050EE6314D1950300788112 /* AppDelegate.h */,
 				3050EE6414D1950300788112 /* AppDelegate.m */,
 				3050EE5B14D1950200788112 /* Supporting Files */,
@@ -88,6 +108,34 @@
 				3050EE6214D1950300788112 /* Demo-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3050EE8514D198F000788112 /* JMLayerStyles */ = {
+			isa = PBXGroup;
+			children = (
+				3050EE8614D198F000788112 /* JMLayerStyles.h */,
+				3050EE8714D198F000788112 /* JMStylableView.h */,
+				3050EE8814D198F000788112 /* JMStylableView.m */,
+				3050EE8914D198F000788112 /* JMViewLayerStyle.h */,
+				3050EE8A14D198F000788112 /* JMViewLayerStyle.m */,
+				3050EE8B14D198F000788112 /* Styles */,
+			);
+			path = JMLayerStyles;
+			sourceTree = SOURCE_ROOT;
+		};
+		3050EE8B14D198F000788112 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				3050EE8C14D198F000788112 /* DropShadowLayerStyle.h */,
+				3050EE8D14D198F000788112 /* DropShadowLayerStyle.m */,
+				3050EE8E14D198F000788112 /* GradientOverlayLayerStyle.h */,
+				3050EE8F14D198F000788112 /* GradientOverlayLayerStyle.m */,
+				3050EE9014D198F000788112 /* InnerShadowLayerStyle.h */,
+				3050EE9114D198F000788112 /* InnerShadowLayerStyle.m */,
+				3050EE9214D198F000788112 /* StrokeLayerStyle.h */,
+				3050EE9314D198F000788112 /* StrokeLayerStyle.m */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +202,12 @@
 			files = (
 				3050EE6114D1950300788112 /* main.m in Sources */,
 				3050EE6514D1950300788112 /* AppDelegate.m in Sources */,
+				3050EE9414D198F000788112 /* JMStylableView.m in Sources */,
+				3050EE9514D198F000788112 /* JMViewLayerStyle.m in Sources */,
+				3050EE9614D198F000788112 /* DropShadowLayerStyle.m in Sources */,
+				3050EE9714D198F000788112 /* GradientOverlayLayerStyle.m in Sources */,
+				3050EE9814D198F000788112 /* InnerShadowLayerStyle.m in Sources */,
+				3050EE9914D198F000788112 /* StrokeLayerStyle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +309,7 @@
 				3050EE6A14D1950300788112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
