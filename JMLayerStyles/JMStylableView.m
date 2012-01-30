@@ -159,22 +159,28 @@ CGGradientRef JMCreateGradientWithColorsAndLocations(NSArray *colors, NSArray *l
     
     if(innerShadowStyle) {
         /*Main fill region inner drop shadow*/
+
         /*(This is done by duplicating the path, offsetting the duplicate by 1 pixel, and using the EO winding fill rule to fill the gap between the two)*/
         CGContextSaveGState(context);
-        
+
         //set the colour to be a VERY faint grey
         CGContextSetFillColorWithColor(context, [innerShadowStyle.color CGColor]);
-        
+
         //clip the shadow to the top of the box (to reduce overhead)
         CGContextClipToRect(context, CGRectMake(drawRect.origin.x, drawRect.origin.y, drawRect.size.width, radius));
+
         //add the first instance of the path
         CGContextAddPath(context, boxPath);
+
         //translate the draw origin down by 1 pixel
         CGContextTranslateCTM(context, 0.0f, innerShadowStyle.distance);
+
         //add the second instance of the path
         CGContextAddPath(context, boxPath);
+
         //use the EO winding rule to fill the gap between the two paths
         CGContextEOFillPath(context);
+
         CGContextRestoreGState(context);
     }
     

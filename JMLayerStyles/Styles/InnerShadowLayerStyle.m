@@ -7,6 +7,8 @@
 //
 
 #import "InnerShadowLayerStyle.h"
+#import "JMStylableView.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation InnerShadowLayerStyle
 
@@ -28,8 +30,23 @@
     return [style autorelease];
 }
 
-- (void) _apply:(UIView *)targetView {
-    
+- (void) _apply:(JMStylableView *)targetView {
+    if(targetView.cornerRadius == 0.0 && self.size == 0.0) {
+		CAShapeLayer *innerShadowLayer = [[CAShapeLayer layer] retain];
+		CGMutablePathRef p = CGPathCreateMutable();
+		CGPathAddRect(p, NULL, CGRectMake(0.0, 0.0, targetView.bounds.size.width, self.distance));
+		
+		innerShadowLayer.path = p;
+		
+		CGPathRelease(p);
+
+		innerShadowLayer.fillColor = self.color.CGColor;
+		
+		[targetView.layer addSublayer:innerShadowLayer];
+		
+		[innerShadowLayer release];
+        
+    }
 }
 
 - (void) dealloc {
