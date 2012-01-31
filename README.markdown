@@ -1,5 +1,9 @@
 ## JMLayerStyles
 
+**OMG A SPECIAL NOTE!** While I am using this in a couple places in my own projects, I wouldn't recommend just tossing it into yours just yet. I'm open-sourcing it now mainly to get some thoughts from everyone on where to take it. It's still very custom to my own needs.
+
+
+
 `JMLayerStyles` is a set of tools built around a small little UIView subclass that supports being styled by invoking methods whose parameters are quite similar to those found on Photoshop's "Layer Styles" panel.
 
 The end result looks like this:

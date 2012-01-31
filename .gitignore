@@ -1,0 +1,14 @@
+.DS_Store
+build
+build/*
+
+*.mode1v3
+*.pbxuser
+*.perspectivev3
+*.tm_build_errors
+*.xcodeproj/*.mode1v3
+*.xcodeproj/*.pbxuser
+*.xcodeproj/jakemarsh.pbxuser
+*.xcodeproj/jakemarsh.mode1v3
+*/UserInterfaceState.xcuserstate
+*.xcodeproj/project.xcworkspace/xcuserdata/*
