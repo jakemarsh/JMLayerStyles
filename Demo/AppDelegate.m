@@ -49,8 +49,7 @@
     [self.window addSubview:styledView];
 
     [styledView release];
-    
-    
+
     JMStylableView *buttonSortOfView = [[JMStylableView alloc] initWithFrame:CGRectMake(10.0, styledView.bounds.size.height - 54.0, styledView.bounds.size.width - 20.0, 44.0)];
 
     [buttonSortOfView addLayerStyle:[DropShadowLayerStyle dropShadowStyleWithColor:[UIColor colorWithRed:25.0/255.0 green:140.0/255.0 blue:198.0/255.0 alpha:0.4] 
